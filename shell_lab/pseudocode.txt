@@ -1,0 +1,48 @@
+basic shell concept:
+
+while(1){
+	print_prompt()
+	line=read_a_line()
+	if (we hit EOF)
+		exit(EXIT_SUCCESS);
+	eval(line);
+}	
+
+echo(input){
+	while(input != null){
+		printf input
+}
+
+pause(){
+	print message
+	wait for user to enter key
+}
+
+cd(path){
+	get cwd
+	concat cwd and path
+	chdir to concatination
+		if failure, respond
+}
+
+env(envp){
+	print(envp)
+}
+
+pwd(){
+	get cwd
+	print cwd
+}
+
+ls(){
+	get current directory
+	open directory via cwd
+	read through contents
+		if nonempty, print
+}
+
+clear(){
+	use ascii escape codes
+	or
+	print(\n) a bunch of times
+}

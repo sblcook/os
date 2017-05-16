@@ -1,0 +1,27 @@
+This is a basic Unix-based shell for the CIS 3207 Assignment created by Sam Cook.
+
+This shell has several main commands. The commands and their implementation is as follows:
+
+	1. cd <directory> : Changes the current directory to <directory>. If <directory> argument is missing, it will report its current directory. If <directory> is not found, it will report that. This will also change the pwd environment
+
+	2. clr : Clears the screen by entering new line a specified amount of times, can be changed in source code. No argument needed.
+
+	3. ls : Lists the contents of current directory
+
+	4. environ: lists the current environment variable
+
+	5. echo <comment>: Displays <comment> on a new line
+
+	6. help : displays this manual
+
+	7. quit : quits the shell
+
+The command line prompt is the pathname of the current directory. This is also what appears when the 'pwd' command is used on a Unix shell.
+
+This shell can also use pipes and redirection. 
+	To send the output of a command to a file, use the format: command > file. If "file" does not already exist, it will create it. If "file" does exist, it will write over it.
+
+	If you would instead like to append to an existing file if it already exists, use the format command >> file. It will still create "file" if it does not already exist, though.
+
+	To take input and commands from a file, use the format: command < input. 
+
